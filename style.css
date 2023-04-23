@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(186, 73, 73);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+
+    /* border: 2px solid black; */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    /* border: 2px solid violet; */
+    margin: 0 auto;
+    border-bottom: 1px solid red;
+    padding: 10px 0;
+
+}
+
+.header .container-left h3 {
+    color: white;
+
+}
+
+.header .container-right ul {
+    display: flex;
+    list-style: none;
+}
+
+.header .container-right ul li {
+    margin-right: 20px;
+    background-color: rgb(198, 106, 106);
+    padding: 4px 9px;
+}
+
+.header .container-right ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+
+}
+
+
+
+main .timer-section {
+    margin: 40px auto;
+    border: 2px solid indianred;
+    width: 40%;
+    text-align: center;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.18);
+    border-radius: 7px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(1.5px);
+    border: 1px solid rgba(255, 255, 255, 0.19);
+    padding: 40px 0;
+}
+
+
+main .timer-section h4 {
+    font-size: 18px;
+    color: white;
+    background-color: rgb(164, 78, 78);
+    display: inline;
+
+}
+
+main .timer-section h1 {
+    font-size: 6em;
+    color: white;
+}
+
+main .timer-section button {
+    color: rgb(186, 73, 73);
+    cursor: pointer;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 4px;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    transition: .5s linear;
+}
+
+
+main button:hover {
+    background-color: antiquewhite;
+}
+
+
+main .list-container {
+    width: 30%;
+    margin: 0 auto;
+    /* border: 2px solid violet; */
+}
+
+main .list-container .add {
+    color: rgb(186, 73, 73);
+    cursor: pointer;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+
+}
+
+
+
+main .todo-lists {
+    /* border: 2px solid; */
+    margin: 0;
+    padding: 0;
+
+}
+
+main .todo-lists .list-header h4 {
+
+    width: 100%;
+    color: white;
+
+}
+
+main .todo-lists .list-header {
+    border-bottom: 2px solid white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid black; */
+
+}
+
+main .todo-lists input {
+    margin-top: 20px;
+    /* text-align: center; */
+    width: 100%;
+    height: 50px;
+    background-color: rgb(171, 67, 67);
+    border: dashed;
+    color: white;
+    font-size: 19px;
+}
+
+
+@media(max-width:992px){
+    .header{
+        width: 60%;
+    }
+    main .timer-section{
+        width: 80%;
+    }
+}
